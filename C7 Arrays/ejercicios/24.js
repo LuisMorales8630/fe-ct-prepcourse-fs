@@ -5,6 +5,18 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+
+  var aumentado = [];
+  
+  for (var i = 0; i < 10; i++){
+    
+   if (i === 4){ // igual a 4 xq es la la posición 5, ya que el array empieza desde 0.
+    continue;
+   }
+   num += 2;
+   aumentado.push(num);
+  }
+  return aumentado;
 }
 
 module.exports = continueStatement;
